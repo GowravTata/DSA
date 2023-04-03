@@ -1,0 +1,3 @@
+List comprehension: It's a shortcut syntax to create list from another iterable
+
+iterable: list, set

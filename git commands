@@ -1,0 +1,249 @@
+125  git config --global user.email gowrav.bhargav@ltts.com
+126  git config --list
+127  cd learning/
+128  git init
+129  git add .
+130  git commit -m 'initial commit'
+131  git remote add origin https://github.com/GowravTataLTTS/learning.git
+132  git push -u origin main
+133  git push -u origin
+134  git push --set-upstream origin master
+135  vi names.txt
+136  cat names.txt
+137  git status
+138  git restore --staged names.txt
+139  git status
+140  git commit -m 'second commit'
+141  git status
+142  git add .
+143  git status
+144  git commit -m 'second commit'
+145  git log
+146  git push
+147  rm -f names.txt
+148  git status
+149  git commit -m 'deleting file'
+150  git log
+151  git push
+152  git status
+153  git add .
+154  git status
+155  git commit -m 'delete file'
+156  git push
+157  git log
+158  git reset bed68bf2fb3df4b7c1b196ef52d12fd3d62fbd4f
+159  git log
+160  git status
+161  git add .
+162  git status
+163  touch surnames.txt
+164  vi surnames.txt
+165  cat surnames.txt
+166  vi surnames.txt
+167  vim surnames.txt
+168  cat surnames.txt
+169  touch houses.txt
+170  git status
+171  git stash
+172  git status
+173  git add .
+174  git stash
+175  git status
+176  git log
+177  git stash pop
+178  git add .
+179  git status
+180  git stash
+181  git status
+182  git stash clear
+183  git remote -v
+184  git status
+185  clear
+186  git stash pop
+187  touch hotel.txt
+188  vim hotel.txt
+189  touch number.txt
+190  vim number.txt
+191  git status
+192  git add hotel.txt
+193  git commit -m 'added hotel'
+194  git add number.txt
+195  hit commit -m number.txt
+196  git commit -m number.txt
+197  touch laptop.txt
+198  vim laptop.txt
+199  git add laptop.txt
+200  git commit -m 'added laptop'
+201  touch earphones.txt
+202  vim earphones.txt
+203  touch hello.py
+204  vim hello.py
+205  git add hello.py
+206  git commit -m 'added hello file'
+207  git status
+208  git add .
+209  git commit -m 'added earphones'
+210  git status
+211  git log
+212  git push
+213  git pull
+214  git config pull.rebase false
+215  git config pull.rebase true
+216  git config pull.ff only
+217  git config --global --rebase
+218  git push
+219  git push --help
+220  git pull
+221  git branch feature
+222  git checkout feature
+223  git branch
+224  git status
+225  touch hello.py
+226  vim hello.py
+227  git status
+228  git add .
+229  git status
+230  cd ..
+231  mkdir trial
+232  git remote add origin git@github.com:GowravTataLTTS/learning.git
+233  cd trial/
+234  git remote add origin git@github.com:GowravTataLTTS/learning.git
+235  git init
+236  git remote add origin git@github.com:GowravTataLTTS/learning.git
+237  git branch trunk
+238  git branch master
+239  git status
+240  touch hello.py
+241  vim hello.py
+242  git status
+243  git add .
+244  git commit -m 'initial commit'
+245  git push
+246  cd ..
+247  ls
+248  git rm -rf learning/
+249  rm -rf learning/
+250  rm -rf trial/
+251  clear
+252  git clone https://github.com/GowravTataLTTS/learning.git
+253  cd learning/
+254  git init
+255  ls
+256  touch hello.py
+257  vim hello.py
+258  git add .
+259  git commit -m 'third commit'
+260  git push
+261  git log
+262  git reset --hard 5c3ad4f3960e6d771e7832ed9f59aa542a25ffc8
+263  git push
+264  git push origin master
+265  git reset --hard bed68bf2fb3df4b7c1b196ef52d12fd3d62fbd4f
+266  git push origin master
+267  clear
+268  git branch feature
+269  git checkout feature
+270  touch names.txt
+271  vim names.txt
+272  git status
+273  git add .
+274  git commit -m 'names commit'
+275  git push
+276  git push --set-upstream origin feature
+277  git merge feature
+278  git checkout master
+279  git merge feature
+280  git push
+281  git push origin master
+282  git branch
+283  git checkout feature
+284  git status
+285  git branch master
+286  git checkout master
+287  git merge feature
+288  git status
+289  git branch feature
+290  git checkout feature
+291  touch cell.py
+292  vim cell.py
+293  git status
+294  git add .
+295  git commit -m 'cell commit'
+296  git push
+297  git checkout master
+298  git merge
+299  git merge feature
+300  git branch
+301  git pull
+302  cd ..
+303  rm -f learning/
+304  rm -rf learning/
+305  clear
+306  git init
+307  git add README.md
+308  git commit -m "first commit"
+309  git branch -M main
+310  git remote add origin https://github.com/GowravTataLTTS/learning.git
+311  git push -u origin main
+312  git status
+313  mkdir trial
+314  git init
+315  git remote add origin https://github.com/GowravTataLTTS/learning.git
+316  touch names.txt
+317  vim names.txt
+318  git status
+319  git add names.txt
+320  git status
+321  git commit -m 'first commit'
+322  git branch -M main
+323  git push -u origin main
+324  git branch feature
+325  git checkout feature
+326  touch hello.py
+327  vim hello.py
+328  git add .
+329  git status
+330  ls
+331  rm names.txt
+332  clear
+333  git clone https://github.com/GowravTataLTTS/learning.git
+334  cd learning/
+335  git branch
+336  git branch feature
+337  git checkout feature
+338  touch hello.py
+339  vim hello.py
+340  git status
+341  git add .
+342  git commit -m 'first commit in feature branch'
+343  git push
+344  git push --set-upstream origin feature
+345  git checkout main
+346  git merge feature
+347  git push origin main
+348  git branch
+349  git pull
+350  git pull \
+351  git pull origin qac
+352  git fetch
+353  git branch
+354  git checkout qac
+355  git branch
+356  git log
+357  git rebase -i
+358  git rebase -i abed69e5ab294a39440d4076067333c15c136be9
+359  git log
+360  git status
+361  git push
+362  git push origin qac
+363  git pull origin master
+364  git pull origin main
+365  git push origin qac -f
+366  git log
+367  git reset --hard upstream abed69e5ab294a39440d4076067333c15c136be9
+368  git reset --hard abed69e5ab294a39440d4076067333c15c136be9
+369  git push origin qac
+370  git push origin qac -f
+371  git log
+372  git history
+373  history

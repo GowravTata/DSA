@@ -1,0 +1,17 @@
+Sorting: The method in which all the elements in the datastructure are sorted in ascending or descending order
+
+
+Two methods of sorting:
+1. sort: can be applied to list.
+2.sorted:  it works for all kinds of iterable containers. it does not alter the past container but it returns a
+new list.so it works for mutable and immutable containers.
+
+Tim Sort Algorithm: It is the algorithm that uses both merge sort and insertion sort internally.
+
+The two parameters that sort takes are key, reverse
+
+Role of sort in python
+1. It internally uses TimSort Algorithm
+2. It is stable, meaning elements are returned based on their initial position if they are same
+3. Works only for list ( as list are mutable)
+4. Modifies the same list

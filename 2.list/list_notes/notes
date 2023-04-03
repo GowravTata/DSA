@@ -1,0 +1,39 @@
+Advantages of list:
+
+Random Access:
+if we want to get an item in list, getting the i'th item in constant time
+take the base address, take the size of individual block and multiple by i , know the address find the reference
+and get the actual item
+Note: Set & Dictionary doesn't have random access
+
+Cache Friendly:
+Locality of reference: when an item is fetched CPU stores the data of that item and to that nearest items are also
+fetched. In case of List or Array this references are already there in the cache.
+
+Note:The above advantage is not present when the container is linkedlist like deck
+
+Disadvantages:
+
+Insertion, Deletion and search are slow:
+
+If an element is to be inserted , as the references have contiguous locations, one item inserted will have to
+move all the elements by 1 position, so here the insertion time is linear, same is for deletion.
+
+If list is sorted binary search can be used, if not linear search to be used
+
+Search is also slow for sorted.
+
+
+------------------------------------------------------------------------------------------------
+
+How Dynamic Size Array work:
+
+Let's assume a list is created
+let's assume that the size of list is 10, when the 11th item is added, memory added to the previous list
+is deallocated and a new memory of list with 20 blocks is allocated
+
+Note: for python value of implementation is 1.125 meaning, if n blocks of memory is allocated initially , when the
+n+1 number is added,old memory is deallocated and a new memory of n*1.125 is added.
+
+In python elements present in the list are not present at their place in list,normally there are reference numbers
+which will consists of the actual holding numbers

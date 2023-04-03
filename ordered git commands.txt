@@ -1,0 +1,234 @@
+   1  git clone https://github.com/GowravTataLTTS/learning.git
+    2  cd lear
+    3  ls
+    4  clear
+    5  cd learning/
+    6  ls
+    7  git status
+    8  vi new_vi new_things.py
+    9  ls
+   10  git status
+   11  rm -f new_vi
+   12  git status
+   13  clear
+   14  git log
+   15  vi hello.py
+   16  vi new_file.py
+   17  ls
+   18  vi first.py
+   19  git status
+   20  git add .
+   21  git commit -m 'new file'
+   22  git push
+   23  git log
+   24  git reset a7510494f537ce78f8e1d1025708207f484a9194
+   25  git push
+   26  git reset a7510494f537ce78f8e1d1025708207f484a9194
+   27  git reset a7510494f537ce78f8e1d1025708207f484a9194 --hard
+   28   ls
+   29  git log
+
+   30  git reset 02deba99edceca85c05d97f7154b051e32cc9970 --hard
+   31  ls
+   32  git status
+   33  git add .
+   34  git status
+   35  vi new_file.py
+   36  git status
+   37  git add .
+   38  git commit -m 'try'
+   39  git push
+   40  git pull
+   41  git status
+   42  ls
+   43  vi new_file.py
+   44  exit
+   45  ls
+   46  git rm *.py
+   47  git status
+   48  ls
+   49  rm *.txt
+   50  touch names.txt
+   51  vi names.txt
+   52  git status
+   53  git commit -m 'deleted all files'
+   54  cat names.txt
+   55  git push
+   56  cat names.txt
+   57  vi names.txt
+   58  git add .
+   59  git status
+   60  git restored --staged names.txt
+   61  git status
+   62  git add name
+   63  git add names.txt
+   64  git status
+   65  git status
+   66  git restore --staged names.txt
+   67  git status
+   68  git log
+   69  git push
+   70  git status
+   71  git add names.txt
+   72  ls
+   73  git add .
+   74  git status
+   75  git push
+   76  cat names.txt
+   77  git status
+   78  git commit -m 'new changes'
+   79  git push
+   80  clear
+   81  git loh
+   82  git log
+   83  cat names.txt
+   84  vi names.txt
+   85  git add .
+   86  git status
+   87  git commit -m 'other change'
+   88  log
+   89  git log
+   90  vi names.txt
+   91  git add .
+   92  git add names.txt
+   93  git commit -m 'other change for 2nd time'
+   94  git log
+   95  git reset dd14a28e8324d8b435f48402faebc221200df8d3
+   96  git log
+   97  git status
+   98  git add names.txt
+   99  touch surnames.txt
+  100  vi surnames.txt
+  101  touch houses.txt
+  102  vim houses.txt
+  103  vi houses.txt
+  104  git status
+  105  git stash
+  106  git status
+  107  git add .
+  108  git status
+  109  git stash
+  110  git log
+  111  git stash pop
+  112  ls
+  113  git remote add origin https://github.com/GowravTataLTTS/check.git
+  114  git init
+  115  git status
+  116  clear
+  117  touch names.txt
+  118  cat names.txt
+  119  vi names.txt
+  120  cat names.txt
+  121  git status
+  122  git add .
+  123  git status
+  124  git commit -m 'first commit'
+  125  gitp push
+  126  git push
+  127  git remote add origin https://github.com/GowravTataLTTS/check.git
+  128  git push
+  129   git push --set-upstream origin master
+  130  git log
+  131  touch age.txt
+  132  vi age.txt
+  133  git add .
+  134  git commit -m 'added ages'
+  135  touch surnames.txt
+  136  vi surnames.txt
+  137  git add surnames.txt
+  138  git commit -m 'added surnames'
+  139  git push
+  140  git clone https://github.com/GowravTataLTTS/new.git
+  141  cd new/
+  142  cat README.md
+  143  git remote -v
+  144  git remote add upstream https://github.com/GowravTata/new.git
+  145  git remote -v
+  146  cat README.md
+  147  vi README.md
+  148  git branch text
+  149  git checkout text
+  150  git status
+  151  git add .
+  152  git commit -m 'tata added a message'
+  153  git log
+  154  git push
+  155  git push origin text
+  156  ls
+  157  touch names.txt
+  158  vi names.txt
+  159  git add .
+  160  git commit -m 'added names'
+  161  git push origin text
+  162  git log
+  # this will reset with a certain commit, all the commits after this will be gone
+  163  git reset beb9b8ae3c1c30b4801f71dd53a5122d3dedc21f
+  164  gt status
+  165  git status
+  166  git stash
+  167  git add .
+  168  git stash
+  169  git log
+  # after execution of command 163, the changes are done, to reflect the same in remote below is done to force push
+  170  git push origin text -f
+  171  ls
+  172  vi README.md
+  173  git status
+  174  git checkout main
+  175  git log
+  176  git fetch --all --prune
+  177  git log
+  178  git reset --hard upstream/main
+  179  git log
+  180  git pull upstream main
+  181  git log
+  182  git push origin main
+  183  git log
+  184  git branch temp
+  185  git checkout temp
+  186  touch 1
+  187  ls
+  188  git status
+  189  git add .
+  190  git commit -m "1"
+  191  touch 2
+  192  git commit -m "2"
+  193  git add .
+  194  git commit -m "2"
+  195  git log
+  196  touch 3
+  197  git add .
+  198  git commit -m "3"
+  199  touch 4
+  200  git add .
+  201  git commit -m "4"
+  202  git log
+  203  git log
+  # command to squash all the commits
+  204  git rebase -i bc599ac21e543b6f7b3b47a41a31a3699d3b4162
+  205  git log
+  206  git status
+  207  git reset --hard 8428537770656b2391ca0f73fb75ad45e2da03e1
+  208  git log
+  209  hostory
+  210  history
+  211  touch all_commands.txt
+  212  vi all_commands.txt
+  213  git status
+  214  git add .
+  215  git status
+  216  git commit -m 'adding all the commands used'
+  217  git push origin temp
+  218  git status
+  219  git log
+  220  git log
+  221  ls
+  222  git rm -f 1 2 3 4
+  223  git status
+  224  git branch remover
+  225  git checkout remover
+  226  git status
+  227  git commit -m 'removed files'
+  228  git push origin remover
+  229  exit
+

@@ -1,0 +1,13 @@
+Sorted is one method, this is applicable for all the iterable containers like list, string, dictionary, tuple,
+set etc.
+
+Whenever this method is applied, it always returns the new list irrespective of the data structure it is passed
+
+Parameters that sorted take are key, reverse
+
+If the data structured passed has many elements for each element , always first is considered
+
+Stability:  If two elements have same value, they should appear in the same order as they appeared in the original
+array
+Bubble Sort, Insertion Sort, Merge Sort are of stable
+Selection SOrt, Quick SOrt and Heap Sort are of not stable

@@ -1,0 +1,19 @@
+A function calling itself is called recursion
+
+Backtracking is used in
+
+1. Dynamic Programming
+2. Backtracking
+3. Divide & Conquer(Binary Search,Quick Sort, Merge Sort)
+
+4. Tower of hanoi
+5. DFS
+
+Tail Recursion: while using recursion , if there is no line after the recursion it is called tail recursion
+
+Tail Call Elimination: Using of certain keywords  in languages like java , they eliminate the usage of recursion
+function. instead of that they use keywords like 'goto', 'start'.
+
+In python tail recursion can be changed into a loop
+
+Quicksort, Postorder Tree Traversal are tail recursive

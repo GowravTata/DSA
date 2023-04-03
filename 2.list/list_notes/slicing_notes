@@ -1,0 +1,18 @@
+For slicing the elements in the list, list has specified in the following manner
+
+list[inclusive_index:exclusive_index]
+
+Ex: a = [1,2,3,4,5]
+
+for a[1:4], it starts with 2 and goes up to 4 , 5 is not displayed as it is in the 4th index which is excluded
+from the indexing
+
+
+a= [1,2,3,4,5]
+a2=a[:]
+whenever a new list is made from a existing it always gives a different list from the original list
+meaning the address or memory block of the copied list is different from the original list
+
+In case of tuple & string, the copy and original refer to the same address or memory block, because they are
+immutable.
+
