@@ -6,10 +6,6 @@
      not stable, order of equal elements may change
 """
 
-array = [10, 5, 8, 20, 2, 18, 10, 9, 10]
-
-some = list(range(1, 10))
-
 # my solution
 """
    in the below approach swapping is done for every loop that is, the first index element is directly swapped
@@ -38,4 +34,8 @@ def selection_sort(l):
     return l
 
 
-print(selection_sort(l=array))
+array = [10, 5, 8, 20, 2, 18, 10, 9, 10]
+
+some = list(range(1, 10))
+print(selection_sort_own(l=array))
+
