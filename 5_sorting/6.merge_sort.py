@@ -137,7 +137,7 @@ def merge(a, low, mid, high):
     in the second iteration i=0,j=1, 11 is compared with 10 and 15 is replaced with 10 in a
     so the result will be [8, 10, 20, 40, 8, 11, 55]
 
-    like wise it will happen for all the iterations
+    like-wise it will happen for all the iterations
     """
     left = a[low:mid + 1]
     right = a[mid + 1:high + 1]
