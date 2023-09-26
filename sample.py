@@ -20,3 +20,15 @@ def commonNumbers(input_string):
     return common_numbers
 
 print(commonNumbers(input_string))
+
+
+def common_numbers(input_string):
+    translation_table = str.maketrans('', '', ',')
+    new_list = []
+    for string in input_string:
+        numeric_string = string.translate(translation_table)
+        new_list.append([int(i) for i in numeric_string.split()])
+    commonNumbers = [numbers for numbers in new_list[0] if numbers in new_list[1]]
+    return commonNumbers
+
+print(common_numbers(sample))
