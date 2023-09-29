@@ -19,7 +19,7 @@ def commonNumbers(input_string):
     common_numbers = [numbers for numbers in all_numbers[0] if numbers in all_numbers[1]]
     return common_numbers
 
-print(commonNumbers(input_string))
+# print(commonNumbers(input_string))
 
 
 def common_numbers(input_string):
@@ -31,4 +31,24 @@ def common_numbers(input_string):
     commonNumbers = [numbers for numbers in new_list[0] if numbers in new_list[1]]
     return commonNumbers
 
-print(common_numbers(sample))
+# print(common_numbers(sample))
+
+
+records = [['chi',20],['beta',50],['alpha',50]]
+def second_highest(input_list):
+    first_least = input_list[0][1]
+    second_least = 0
+    i=0
+    for each in records:
+        if each[1] <= first_least:
+            first_least = each[1]
+        if each[1] > first_least and each[1] <= second_least:
+            second_least =each[1]
+        i+=1
+    for elem in records:
+        if elem[1] == second_least:
+            print(elem[0])
+    return second_least
+
+print(second_highest(records))
+
